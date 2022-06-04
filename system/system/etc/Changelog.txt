@@ -1,0 +1,327 @@
+====================
+     06-01-2022
+====================
+
+   * hardware/qcom-caf/sm8350/audio
+5decb6c52 Merge tag 'LA.UM.9.14.r1-19200.02-LAHAINA.QSSI13.0' into lineage-19.1-caf-sm8350
+
+   * hardware/qcom-caf/sm8350/display
+054d9065f Merge tag 'LA.UM.9.14.r1-19200.02-LAHAINA.QSSI13.0' into lineage-19.1-caf-sm8350
+
+   * packages/apps/GameSpace
+4be3ccc GameSpace: Add lock gesture tile
+86b397c GameSpace: Rearrange preferences
+078a978 GameSpace: Clean up strings
+
+   * packages/apps/Settings
+912a9bc25d Merge 'lineage-19.1' into 12.1
+
+====================
+     05-31-2022
+====================
+
+   * bionic
+d3a7dd821 arm64: memset: Use p2align instead of nop
+
+   * build/make
+a8d88331d8 Don't build useless html viewer
+375085e6c2 envsetup: Fix indentation in ccache code snippet
+5339fcf9c2 envsetup: export the CCACHE_DIR if its not set
+
+   * frameworks/base
+433553b1e890 SystemUI: Calculate paged QS tiles height properly
+66a0ce87300e SystemUI: Add left padding for keyguard slices
+1c3ad6677e74 PixelPropsUtils: Exclude recorder from pixel props
+
+   * vendor/lineage
+5b326b45 build: Wipe DTB/O OBJs before build
+a4bbf057 build: Override host metadata
+
+====================
+     05-30-2022
+====================
+
+   * android
+75add0d manifest: Track OpenCSD
+
+   * external/OpenCSD
+8daf795 No global ThinLTO for OpenCSD
+
+   * frameworks/native
+0163dcdcea SF: Scheduler: relax measurements for heuristic mode
+
+   * packages/apps/DeskClock
+2db28692c DeskClock: Adjust accent colors
+
+   * packages/apps/Dialer
+88027ea17 Dialer: Use dialer_theme_color as accent
+
+   * packages/apps/GameSpace
+696fe0d New translations (#3)
+
+   * packages/apps/Launcher3
+1febee8562 New translations (#235)
+
+   * packages/apps/Settings
+be2dd45c2f Datausage: Fix NPE in preference controller
+
+   * packages/apps/crDroidSettings
+cc69e83d New Crowdin updates (#926)
+
+====================
+     05-29-2022
+====================
+
+   * external/libvpx
+44e5c7e Workaround global ThinLTO breakage
+
+   * frameworks/av
+a281ec8ada Workaround global ThinLTO breakage
+
+   * frameworks/base
+30739116e86c Fix QS clock being white on light theme
+441391bb3e76 Fix dialog exit animation
+2337b2c84700 AudioDeviceBroker: handle back to back device change requests
+d63ffe669cc3 SystemUI: Add support for GameSpace
+d85bf02a254a Remove Google games dashboard integration
+635a115502dc New Crowdin updates (#838)
+fec6b89081fd Update Crowdin configuration file
+de468f535644 SystemUI: Re-evaluate system theme on UI mode change
+5af0fb2eb912 Revert "UIModeTile: Collapse after change UI mode"
+6d5539ce36ef SystemUI: Reset QS on UI mode change
+d82e93ca542d SystemUI: Use color accent for charging animation
+f31415910755 Fix binderDied of an app can not be triggered in some cases.
+e8f526cc564a toString() of StringBuilder need to create a array copy with count, if no more memory could be made available by the garbage collector, "free list large object space" maybe oom.
+2fe7eb41c3d4 Delete all templates that do not match
+f5293e498e40 Do not get portInfo if physical address is 0x0000
+6b0d7abea7e6 Fix indicator can't disappear in some cases
+74c10a0cf8c4 Update SysUI to be compatible with latest Jetpack libraries
+b6c132905575 Don't send null data call list response
+2a1d6078c2eb AudioService: catch RuntimeException for IServiceManager.getService
+e320b0d2af95 Fix ISessionControllerCallback leaks in the system_server when the far side died
+
+   * hardware/qcom-caf/sm8350/audio
+16ff87039 audio: configs: Don't advertise vorbis offloading support
+
+   * packages/apps/Launcher3
+24569e333b New translations (#232)
+faa0d77335 Launcher3: RecentsView: add null check on RemoteTargetHandle array
+096e0a9d45 Launcher3: Specify hour index for clock themed icon
+d8a56b26ea Launcher3: Avoid NPE in TaskOverlayFactory
+c60afbd24c Launcher3: Map Etar
+afd218b866 Launcher3: Update icons
+7602eda6e6 Launcher3: Make taskbar untouchable during transitions
+9f7df3e60d Launcher3: Improve taskbar state controller for resume
+1a5c68add6 Launcher3: Do not attach cleanupScreenshot() to frame update event
+5ad528ec90 Launcher3: Add NPE check in apps search container
+82ac36e290 Launcher3: Open all apps on pressing home on default screen
+cda9ffb18a Launcher3: Disable ENABLE_TASKBAR_EDU
+b0fcab0492 Launcher3: Allow enabling recents overview grid on phones
+19c41c39b7 Launcher3: Fix occasional NPE
+ee6b367618 Launcher3: Trigger to hide navbar hint settings
+48f0e484f5 Launcher3: Re-add priv app permissions
+ddc9468950 Launcher3: Enable taskbar by default on tablet
+fbd7425390 Launcher3: Add support for enabling taskbar on phones
+5592da918b Quickstep: fix NPE with swipe down
+e508e544cb Launcher3: Use font configs instead sans-serif
+
+====================
+     05-28-2022
+====================
+
+   * android
+7594396 manifest: Track ndk abi-dump
+19d1fe6 Track updated external libs
+
+   * external/zlib
+e52bbfa zlib: Merge chromium zlib master
+
+   * frameworks/native
+5cd1210312 SF: set debug.sf.frame_rate_multiple_threshold to 60 by default
+d22c3d5bf5 SF: Scheduler: vote max for NOTIFICATION_SHADE
+d0be68a6b7 SF: Scheduler: add more window types to consider NoVote
+
+   * packages/apps/Updater
+2c5fcbb New Crowdin updates (#30)
+8333dcc Update Crowdin configuration file
+f17e734 Updater: Move strings for translation
+8d8ba17 Updater: Prioritize A/B updates by default
+4071124 Revert "Updater: layout: activity_updates: add spacing.."
+a5ecf25 Updater: Rework drawables for support links
+b92d8cc Updater: Update parsed info whenever data is refreshed
+df040ac Updater: Properly add visible strings
+a649504 Updater: add support links and some more info
+ecdf997 Updater: Use headline font for activity header
+a36e32f Updater: adapt to new changelog url
+fedfcaf Updater: Hide recovery update option by default
+d46de07 Updater: Nuke Lineage's website on installation blocked dialog
+ae27ada Updater: Initial adaption for crdroid
+cf774c4 Updater: Change package name to avoid conflict
+5c53ad6 Updater: add support for local updates
+604f029 Updater: Ship as crdroid updater
+
+   * prebuilts/abi-dumps/ndk
+bfe3773 ndk: remove libz.so from ABI check target
+
+   * prebuilts/abi-dumps/vndk
+9be01767 vndk: remove libz from ABI check target
+
+====================
+     05-27-2022
+====================
+
+   * packages/apps/Seedvault
+346773d Seedvault: Redesign SUW activities for 12
+
+====================
+     05-26-2022
+====================
+
+   * external/giflib
+a676881 giflib: Update to v5.2.1
+d494773 giflib: Remove unused file gif_font.c
+
+   * external/htop
+6e15b36 htop: regenerate sources and configs for Android builds
+ef0af86 Merge tag `3.2.0` of `https://github.com/htop-dev/htop` into `lineage-19.1`
+
+   * external/libvpx
+8de5b11 libvpx: Regen connfigs after update
+ca1dc7d Update libvpx to 1.11.0+
+ab740e2 libwebm: Update to mkvparser to version 1.1.0
+
+   * external/zlib
+52b7923 Revert "Support Darwin+Arm64"
+d35bbc9 Revert "Export zlib headers to musl sysroot"
+
+   * frameworks/native
+ba6892f1dd Merge pull request #11 from ShevT/12.1
+
+   * packages/apps/Updater
+c6d2a16 Updater: Unbreak "Export update" feature
+
+====================
+     05-25-2022
+====================
+
+   * frameworks/av
+791283a91f Mpeg4Extractor: Fix flac parsing in mp4
+84f3c5e323 libstagefright: omx: Add support for loading prebuilt ddp and ac4 decoder lib
+
+   * packages/apps/Dialer
+675f15250 fixup! Add a permission to guard receiving intents in StatusSmsFetcher.
+
+   * packages/apps/Messaging
+71a4cbb Merge pull request #3 from ShevT/12.1
+1b4e892 messaging: Monetize more..
+bf9027f Correct APNs for Carolina West Wireless
+
+   * packages/apps/Settings
+974e750a11 Merge pull request #122 from ShevT/12.1
+13e237c51b Call CardDatabaseHelper.getInstance() when used and not in onCreate
+e268745b29 Fix bluetooth percentage not showing on battery widget
+
+====================
+     05-24-2022
+====================
+
+   * art
+cfae0c16bb Merge pull request #6 from ShevT/12.1
+
+   * bionic
+120940afc Merge pull request #10 from ShevT/12.1
+
+   * external/freetype
+5341f9bb2 freetype: Hack FT_Glyph_Format to fix Android ABI
+d7c7885aa freetype: Update to v2.12.1
+
+   * external/harfbuzz_ng
+8f4268425 harfbuzz_ng: Enable thinlto
+093dad6df Android.bp: update for new harfbuzz version
+704a2b437 config: Enable back deprecated functions
+4e039e2a6 harfbuzz: strip harfbuzz with HB_LEAN
+51c2b0dd4 Merge tag '4.3.0' of https://github.com/harfbuzz/harfbuzz into 12.1
+
+   * frameworks/av
+0ee31faf98 Merge pull request #27 from ShevT/12.1
+
+   * frameworks/native
+9acbdac436 libbinder: fix one implicit cast that triggers sanitizer
+
+   * frameworks/opt/telephony
+86a78bd160 Merge pull request #7 from ShevT/12.1
+fd3893f9d3 Checking 'phoneId' when sim status is changed
+
+   * hardware/qcom-caf/common
+de147ee common: Update matrix to LA.QSSI.12.0.r1-07600-qssi.0
+
+   * libcore
+6f0f5a9d4e Merge pull request #4 from ShevT/12.1
+a4cb5881f4 Discourage NativeAllocationRegistries without size
+
+   * packages/apps/GameSpace
+d1bd86b New Crowdin updates (#2)
+
+   * packages/apps/Messaging
+25f030b Messaging: Use darker Material You shades
+
+   * packages/apps/Settings
+4a25415c8a Merge pull request #121 from ShevT/12.1
+
+   * packages/apps/crDroidSettings
+32b047d2 New translations (#924)
+
+   * system/core
+37a871a6a Merge pull request #10 from ShevT/12.1
+cb6b40213 storaged: Avoid divide-by-zero in performance measurement
+ceec2228c init: fix mkdir to reliably detect top-level /data directories
+ee9954be9 init: log services requested restart
+01b6917b0 Reland "libprocessgroup: return false on failure"
+adabe0511 Simplify cgroups.json
+79c0e700a Support process path for WriteFileAction
+3c82212a3 Make task profiles easier to debug
+9a3a37535 Introduce interface class IProfileAttribute
+8bb108798 Make two error messages more detailed
+bbece6967 Use the 'override' keyword where appropriate
+392463b9d libprocessgroup: Add fd caching support for SetProcessProfiles
+bc27a9338 Make class SetTimerSlackAction easier to maintain
+0c9bfbd3f libprocessgroup: Move fd caching code into FdCacheHelper
+6ac6d5757 Align file permissions for cpufreq scaling_max_freq node
+935aa85a7 init: Add --only-if-running argument to restart command.
+
+   * system/vold
+02ed873 Merge pull request #6 from ShevT/12.1
+d40d712 vold: fix the range of stopped state of idleMaint
+
+====================
+     05-23-2022
+====================
+
+   * android
+1d83074 manifest: Track libjpeg-turbo
+
+   * art
+9056ef489d Increase test runner thread count for target.
+
+   * bionic
+c49b3f4cd Fix it to call the lambda function
+0caff5a3e mntent_test: don't assume /proc isn't the first mount.
+
+   * external/libjpeg-turbo
+a83e5d65 Android.bp: add -DNO_PUTENV
+4f474fe5 Update libjpeg-turbo to upstream stable release 2.1.3
+3314a00e Update libjpeg-turbo to upstream stable release 2.1.2
+2a147bf4 Update libjpeg-turbo to 2.1.1 stable release
+9789c63c Update to latest upstream libjpeg-turbo.
+f8af8dd3 Update generated config file for changes in latest sources.
+df9e10b6 Update libjpeg-turbo to 9df5786f05c8be702f5a896b231c6e057847c18b.
+6aea18b8 Always use Neon.
+
+   * frameworks/av
+16d5414a4c libstagefright: Fix HDR profile mapping
+8d253790cb CCodecConfig: apply KEY_ROTATION for image domain
+e64e6a0d06 Camera: Master callback mode support for MCX raw
+
+   * packages/apps/Updater
+418d464 Updater: Show update's version on AlertDialog and Notification
+

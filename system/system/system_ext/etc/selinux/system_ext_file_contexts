@@ -1,0 +1,17 @@
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.lights-service\.mediatek u:object_r:hal_light_default_exec:s0
+/(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?      u:object_r:vendor_configs_file:s0
+/(product|system/product)/vendor_overlay/[0-9]+/lib(64)?/hw    u:object_r:vendor_hal_file:s0
+/(system_ext|system/system_ext)/bin/adb_root      u:object_r:adbroot_exec:s0
+/(system_ext|system/system_ext)/bin/bash          u:object_r:shell_exec:s0
+/data/adbroot(/.*)?        u:object_r:adbroot_data_file:s0
+/data/crdroid_updates(/.*)?           u:object_r:ota_package_file:s0
+/odm/etc/audio_effects.xml      u:object_r:vendor_configs_file:s0
+/sys/kernel/pocket_judge(/.*)?	u:object_r:pocket_judge_sysfs:s0
+/system/bin/vtservice           u:object_r:vtservice_exec:s0
+/system/bin/backuptool_ab\.sh                     u:object_r:otapreopt_chroot_exec:s0
+/system/bin/backuptool_ab\.functions              u:object_r:otapreopt_chroot_exec:s0
+/system/bin/backuptool_postinstall\.sh            u:object_r:otapreopt_chroot_exec:s0
+/sys/kernel/oppo_display/dimlayer_bl_en           u:object_r:sysfs_fod:s0
+/system/bin/hw/lineage\.trust@1\.0-service      u:object_r:hal_lineage_trust_default_exec:s0
+/sys/kernel/oppo_display/oppo_notify_fppress     u:object_r:sysfs_fingerprint_notify:s0
+/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.RMX3031 u:object_r:hal_fingerprint_RMX3031_exec:s0

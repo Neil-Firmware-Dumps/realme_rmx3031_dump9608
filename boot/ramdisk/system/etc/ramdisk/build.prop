@@ -1,0 +1,22 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.bootimage.brand=realme
+ro.product.bootimage.device=RMX3031
+ro.product.bootimage.manufacturer=realme
+ro.product.bootimage.model=Realme X7 Max 5G
+ro.product.bootimage.name=lineage_RMX3031
+ro.bootimage.build.date=Wed Jun  1 07:15:58 UTC 2022
+ro.bootimage.build.date.utc=1654067758
+ro.bootimage.build.fingerprint=alps/vnd_oppo6893/oppo6893:11/RP1A.200720.011/mp2tc16sppr5V1:user/release-keys
+ro.bootimage.build.id=SP2A.220505.002
+ro.bootimage.build.tags=release-keys
+ro.bootimage.build.type=userdebug
+ro.bootimage.build.version.incremental=1654067867
+ro.bootimage.build.version.release=12
+ro.bootimage.build.version.release_or_codename=12
+ro.bootimage.build.version.sdk=32
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file
